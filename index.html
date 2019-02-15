@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class style>
+    <header class="container" id="home">
+        <nav class="navbar navbar-expand-lg navbar-blue bg-blue">
+            <a class="navbar-brand" href="#">Shoes shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link smooth" href="#home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+                <div>
+                    <a class="nav-link" href="#cartModal" data-toggle="modal">
+                        Cart<span id="cart-badge" class="badge badge-light">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <h2 id="products">Products</h2>
+            <div class="row products-container"><div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                  <div class="card product">
+                    <img class="card-img-top" src="img/nikeblack.jpg" alt="Sport Shoes">
+                    <div class="card-body">
+                      <h4 class="card-title">Nike Shoes(Black)</h4>
+                      <button class="btn btn-primary buy" data-id="1">
+                        $73.99 - Buy
+                      </button>
+                    </div>
+                  </div>
+                </div><div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                  <div class="card product">
+                    <img class="card-img-top" src="img/nikered.jpg" alt="Cool Shoes">
+                    <div class="card-body">
+                      <h4 class="card-title">Nike shoes(Red)</h4>
+                      <button class="btn btn-primary buy" data-id="2">
+                        $89.99 - Buy
+                      </button>
+                    </div>
+                  </div>
+                </div>
+        </section>
+    </header>
+    
+    
+    
+    
+    <script async="" src="js/alert-window.js"></script>
+    <script defer="" src="js/index.js"></script>
+    <script defer="" src="js/product-list.js"></script>
+    <script defer="" src="js/cart.js"></script>
+    <script async="" src="js/smooth-scroll.js"></script>
+</body>
+</html>
