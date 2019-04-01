@@ -1,14 +1,11 @@
-function showAlert(message, success = true) {
-    const alertTemplate = 
-        `<div class="alert alert-dismissible ${success ? 'alert-success' : 'alert-danger'}" role="alert">
-          <strong>${message}</strong> 
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-          </button>
-        </div>`;
-    const alertElement = $('body').append(alertTemplate);
-    alertElement.alert();
-    setTimeout(() => {
-        $('.alert').alert('close');
-    }, 1000);
-}
+$(function() {
+    $('.smooth').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 700);
+        }
+    });
+});

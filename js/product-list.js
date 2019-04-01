@@ -16,7 +16,7 @@ class ProductList {
         let productListDomString = ''
         products.forEach(product => {
             productListDomString += 
-                `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
                     <img class="card-img-top" src="img/products/${product.image}" 
                         alt="${product.title}">
@@ -27,14 +27,14 @@ class ProductList {
                       </button>
                     </div>
                   </div>
-                </div>`;
+                </div>
         });
         container.html(productListDomString);
     }
     addEventListeners() {
         $('#productInfoModal').on('show.bs.modal', event => {
-            const button = $(event.relatedTarget); // Button that triggered the modal
-            const id  = String(button.data('id')); // Extract info from data-* attributes
+            const button = $(event.relatedTarget); 
+            const id  = String(button.data('id')); 
             const product = this.getProductById(id);
             const modal = $('#productInfoModal');
             modal.find('.modal-body .card-img-top')

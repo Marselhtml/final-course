@@ -1,20 +1,118 @@
-.intro {
-    max-width: 400px;
-    margin-top: 150px;
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+:root {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+header, body, footer {
+    background-color: #B54848;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+#higher_logo {
+    margin-top: -85px;
+    margin-left: 20px;
+}
+
+#lower_logo {
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+#elliot_zugler {
+    width: 80px;
+    margin-left: 180px;
+    margin-top: 20px;
+    width: 100%
+}
+
+.contacts {
+    margin-right: 0px;
+}
+
+div {
+    background-color: white;
+}
+
+.in_header {
+    background-color: white;
+}
+
+#contacts_div {
+    background-color: #161616;
+    width: 50&
+    
+}
+
+.contacts {
+    color: white;
+}
+
+#links_div {
+    height: 55px;
+    width: 200px;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#phone {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+#email {
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+.links {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+
+#nikeblack {
+    min-height: 100vh;
+}
+
+h2 {
+    color: white;
     text-align: center;
 }
-.card {
-    height: 100%;
+
+.main_information {
+    color: black;
 }
 
-.alert {
-    position: fixed;
-    top: 50px; 
-    width: 50%;
-    left: 25%;
-    z-index: 1051;
+.form {
+    display: flex;
+    justify-content: center;
 }
 
-.btn {
-    padding: 0.75rem 0.7rem;
+.in_footer {
+    color: white;
+    text-align: center;
 }
+
+#container {
+    background-color: #B54848;
+}
+
+#brand {
+    display: flex;
+    justify-content: space-around;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
