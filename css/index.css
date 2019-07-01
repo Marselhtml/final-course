@@ -6,11 +6,11 @@
 
 header, body, footer {
     background-color: #B54848;
+    max-width: 1100px;
 }
 
 header {
     display: grid;
-    grid-template-columns: 25% 75%;
 }
 
 #higher_logo {
@@ -26,18 +26,23 @@ header {
 }
 
 #elliot_zugler {
+    position: absolute; text-align:center; font-weight:bold;
     width: 80px;
     margin-left: 180px;
     margin-top: 20px;
-    width: 100%
 }
-
 .contacts {
     margin-right: 0px;
 }
 
 div {
-    background-color: white;
+    background-color: transparent;
+     max-width: 8em;
+     min-height: 2em;
+     margin-left: auto;
+     margin-right: 10em;
+     border: 1px solid orange;
+      background: #fff5d7;
 }
 
 .in_header {
@@ -46,8 +51,7 @@ div {
 
 #contacts_div {
     background-color: #161616;
-    width: 50&
-    
+    width: 50%
 }
 
 .contacts {
@@ -103,7 +107,7 @@ h2 {
 }
 
 #container {
-    background-color: #B54848;
+    background-color: #FFFFFF;
 }
 
 #brand {
@@ -115,4 +119,3 @@ h2 {
     display: flex;
     justify-content: center;
 }
-
